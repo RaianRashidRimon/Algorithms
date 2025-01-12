@@ -5,6 +5,8 @@ The repository is organized into the following folders:
  1. Searching & Sorting Algorithms
       1. Linear Search
       2. Binary Search
+      3. Insetion Sort
+      4. Bubble Sort
  2. Greedy Algorithms
       1. Fractional Knapsack
  3. Dynamic Algorithms
