@@ -4,6 +4,7 @@ This repository contains implementations of fundamental and advanced algorithms 
 The repository is organized into the following folders:
  1. Searching & Sorting Algorithms
       1. Linear Search
+      2. Binary Search
  2. Greedy Algorithms
       1. Fractional Knapsack
  3. Dynamic Algorithms
