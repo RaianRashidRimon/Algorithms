@@ -15,7 +15,7 @@ The aim of this repository is to serve as a resource for students, educators, an
 ## Usage
 1. Clone the repository:
    
-   git clone https://github.com/RaianRashidRimon/Data-Structure.git
+   git clone https://github.com/RaianRashidRimon/Algorithms.git
 2. Navigate to the folder and run the desired code in your preferred compiler or IDE.
 
 ## Contribution
