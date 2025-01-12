@@ -1,24 +1,43 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
-int main(){
-    int input[100], count, i, num;
-    cout << "Enter number of elements in array\n";
+int main() {
+    int count, num;
+
+    cout << "Enter the number of elements in the array: ";
     cin >> count;
-    cout << "Enter elements of the array\n";
-    for(i = 0; i < count; i++){
+
+    if (count <= 0) {
+        cout << "Invalid array size. Please enter a positive number." << endl;
+        return 1;
+    }
+
+    vector<int> input(count);
+    cout << "Enter elements of the array:" << endl;
+    for (int i = 0; i < count; i++) {
         cin >> input[i];
     }
-    cout << "Enter the requested number to find\n";
+
+    cout << "Enter the number to find: ";
     cin >> num;
-    for(i = 0; i < count; i++){
-        if(input[i] == num){
-            cout << "Element found at index " << i;
-            break;
+
+    vector<int> indices;
+    for (int i = 0; i < count; i++) {
+        if (input[i] == num) {
+            indices.push_back(i);
         }
     }
-    if(i == count){
-        cout  << "Element not found\n";
+
+    if (!indices.empty()) {
+        cout << "Element " << num << " found at indices: ";
+        for (int index : indices) {
+            cout << index << " ";
+        }
+        cout << endl;
+    } else {
+        cout << "The requested number was not found in the array." << endl;
     }
+
     return 0;
 }
