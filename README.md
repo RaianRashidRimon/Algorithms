@@ -10,6 +10,8 @@ The repository is organized into the following folders:
       5. Merge Sort
       6. Selection Sort
       7. Counting Sort
+      8. Heap Sort
+      9. Quick Sort
  2. Greedy Algorithms
       1. Fractional Knapsack
  3. Dynamic Algorithms
