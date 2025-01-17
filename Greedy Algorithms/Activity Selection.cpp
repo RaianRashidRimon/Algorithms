@@ -1,44 +1,30 @@
-#include<iostream>
-#include<algorithm>
+#include <iostream>
+#include <algorithm>
 using namespace std;
-struct Activitiy
-{
+struct Activity {
     int start, end;
 };
-bool comp(Activitiy act1, Activitiy act2)
-{
-    if(act1.end < act2.end)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+bool compare(Activity act1, Activity act2) {
+    return act1.end < act2.end;
 }
-int main()
-{
-    Activitiy act[100];
+int main() {
     int n;
+    cout << "Enter the number of activities: ";
     cin >> n;
-    for(int i=0; i<n; i++)
-    {
-        cout << "Enter start time for task " << i+1 << "\n";
-        cin >> act[i].start;
-        cout << "Enter end time for task " << i+1 << "\n";
-        cin >> act[i].end;
+    Activity activities[n];
+    for (int i = 0; i < n; i++) {
+        cout << "Enter start and end time for activity " << i + 1 << ":\n";
+        cin >> activities[i].start >> activities[i].end;
     }
-    sort(act, act+n, comp);
-    int i = 0, count = 1;
-    for (int j = 1; j < n; j++)
-    {
-        if (act[j].start >= act[i].end)
-        {
-            count = count+1;
-            i=j;
+    sort(activities, activities + n, compare);
+    int count = 1; 
+    int lastSelected = 0;
+    for (int j = 1; j < n; j++) {
+        if (activities[j].start >= activities[lastSelected].end) {
+            count++;
+            lastSelected = j;
         }
     }
-    cout << "\n";
-    cout << "Total number of activities that can be done without overlapping is " << count <<"\n";
+    cout << "\nTotal number of activities that can be done without overlapping is " << count << "\n";
     return 0;
 }
