@@ -2,24 +2,19 @@
 using namespace std;
 string Frame;
 string Requests;
-bool SearchRequests(string s, char x)
+bool SearchRequests(string &s, char x)
 {
-    for (int i=0; i<s.size(); i++)
-    {
-        if (s[i]==x)
-        {
-            return true;
-        }
-    }
-    return false;
+    return s.find(x) != string::npos;
 }
 int main()
 {
     int FrameSize;
+    cout << "Enter the frame size: \n";
     cin >> FrameSize;
-    cin>>Frame;
+      cout << "Enter the frame: \n";
+    cin >>Frame;
+    cout << "Enter the memory sequence: \n";
     cin>>Requests;
-
     int miss = 0;
     for (int i=0; i< Requests.size(); i++)
     {
