@@ -2,8 +2,7 @@
 #include <climits>
 using namespace std;
 
-int LIS(int arr[], int i, int n, int prev)
-{
+int LIS(int arr[], int i, int n, int prev) {
     if (i == n) {
         return 0;
     }
@@ -15,10 +14,16 @@ int LIS(int arr[], int i, int n, int prev)
     return max(incl, excl);
 }
 
-int main()
-{
-    int arr[] = { 0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15 };
-    int n = sizeof(arr);
-    cout << "The length of the LIS is " << LIS(arr, 0, n, INT_MIN)<<endl;
+int main() {
+    int n;
+    cout << "Enter the size of the array: ";
+    cin >> n;
+
+    int arr[n];
+    cout << "Enter the elements of the array: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    cout << "The length of the LIS is " << LIS(arr, 0, n, INT_MIN) << endl;
     return 0;
 }
