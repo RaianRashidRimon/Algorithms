@@ -3,7 +3,8 @@
 #include <stack>
 using namespace std;
 
-class Graph {
+class Graph
+{
     int V;
     list<int>* adj;
     void topologicalSortUtil(int v, bool visited[], stack<int>& Stack);
@@ -24,41 +25,61 @@ void Graph::addEdge(int v, int w)
 {
     adj[v].push_back(w);
 }
-void Graph::topologicalSortUtil(int v, bool visited[],
-                                stack<int>& Stack)
+
+void Graph::topologicalSortUtil(int v, bool visited[], stack<int>& Stack)
 {
     visited[v] = true;
     list<int>::iterator i;
     for (i = adj[v].begin(); i != adj[v].end(); ++i)
+    {
         if (!visited[*i])
+        {
             topologicalSortUtil(*i, visited, Stack);
+        }
+    }
     Stack.push(v);
 }
+
 void Graph::topologicalSort()
 {
     stack<int> Stack;
+
     bool* visited = new bool[V];
     for (int i = 0; i < V; i++)
+    {
         visited[i] = false;
+    }
     for (int i = 0; i < V; i++)
-        if (visited[i] == false)
+    {
+        if (!visited[i])
+        {
             topologicalSortUtil(i, visited, Stack);
-    while (Stack.empty() == false) {
+        }
+    }
+    while (!Stack.empty())
+    {
         cout << Stack.top() << " ";
         Stack.pop();
     }
+    delete[] visited;
 }
 
 int main()
 {
-    Graph g(6);
-    g.addEdge(5, 2);
-    g.addEdge(5, 0);
-    g.addEdge(4, 0);
-    g.addEdge(4, 1);
-    g.addEdge(2, 3);
-    g.addEdge(3, 1);
-    cout << "Following is a Topological Sort of the given graph n";
+    int V, E;
+    cout << "Enter the number of vertices: ";
+    cin >> V;
+    Graph g(V);
+    cout << "Enter the number of edges: ";
+    cin >> E;
+    cout << "Enter the edges (source destination):" << endl;
+    for (int i = 0; i < E; i++)
+    {
+        int v, w;
+        cin >> v >> w;
+        g.addEdge(v, w);
+    }
+    cout << "Topological Sort of the given graph is:" << endl;
     g.topologicalSort();
     return 0;
 }
