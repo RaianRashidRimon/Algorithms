@@ -17,6 +17,8 @@ The repository is organized into the following folders:
  2. Greedy Algorithms
       1. Fractional Knapsack
       2. Activity Selection 
+      3. Huffman Coding
+      4. Minimize Maximum Lateness 
  3. Dynamic Algorithms
       1. 0-1 Knapsack
  4. Graph Algorithms
