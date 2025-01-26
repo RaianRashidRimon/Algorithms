@@ -18,9 +18,12 @@ The repository is organized into the following folders:
       1. Fractional Knapsack
       2. Activity Selection 
       3. Huffman Coding
-      4. Minimize Maximum Lateness 
+      4. Minimize Maximum Lateness
+      5. Optimal Caching
  3. Dynamic Algorithms
       1. 0-1 Knapsack
+      2. Longest Common Subsequence 
+      3. Longest Increasing Subsequence 
  4. Graph Algorithms
       1. DFS
 ## 🎯 Purpose 
