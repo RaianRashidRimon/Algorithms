@@ -32,6 +32,7 @@ The repository is organized into the following folders:
       5. Dijkstra
       6. Floyd Warshall
       7. Kruskal
+      8. Prim's
 ## 🎯 Purpose 
 The aim of this repository is to serve as a resource for students, educators, and enthusiasts interested in learning algorithms. Each algorithm is implemented with clear, structured code and is accompanied by comments to facilitate understanding. This repository is ideal for anyone preparing for technical interviews, academic studies, or competitive programming.
 ## 🚀 Usage
