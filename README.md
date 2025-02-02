@@ -45,7 +45,11 @@ The repository is organized into the following folders:
       
  🏗️ Advanced Data Structures
  
+     Segment Tree
+ 
  🧵 String Matching
+
+     Rabin Karp
  
 ## 🎯 Purpose 
 The aim of this repository is to serve as a resource for students, educators, and enthusiasts interested in learning algorithms. Each algorithm is implemented with clear, structured code and is accompanied by comments to facilitate understanding. This repository is ideal for anyone preparing for technical interviews, academic studies, or competitive programming.
