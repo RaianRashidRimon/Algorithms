@@ -42,16 +42,16 @@ The repository is organized into the following folders:
       Kruskal
       Prim's
       Articulation Point
-      
- 🏗️ Advanced Data Structures
- 
-     Segment Tree
-     Segment Tree with Lazy Propagation
  
  🧵 String Matching
 
      Rabin Karp
      Knuth–Morris–Pratt
+
+ 🏗️ Advanced Data Structures
+ 
+     Segment Tree
+     Segment Tree with Lazy Propagation
  
 ## 🎯 Purpose 
 The aim of this repository is to serve as a resource for students, educators, and enthusiasts interested in learning algorithms. Each algorithm is implemented with clear, structured code and is accompanied by comments to facilitate understanding. This repository is ideal for anyone preparing for technical interviews, academic studies, or competitive programming.
