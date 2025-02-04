@@ -46,6 +46,7 @@ The repository is organized into the following folders:
  🏗️ Advanced Data Structures
  
      Segment Tree
+     Segment Tree with Lazy Propagation
  
  🧵 String Matching
 
