@@ -31,7 +31,6 @@ int query(int l, int r)
     }
     return sum;
 }
-
 int main()
 {
     int n;
