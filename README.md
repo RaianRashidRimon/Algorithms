@@ -1,5 +1,5 @@
 # Algorithms
-This repository contains implementations of fundamental and advanced algorithms categorized by type. The implementations are written in C++ and serve as a comprehensive resource for learning and applying algorithmic techniques.
+This repository contains implementations of fundamental and advanced algorithms, along with a few advanced data structures, categorized by type. The implementations are written in C++ and serve as a comprehensive resource for learning and applying algorithmic techniques
 ## 📂 Contents
 The repository is organized into the following folders:
 
